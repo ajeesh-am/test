@@ -44,18 +44,5 @@
         <INPUT TYPE="TEXT" NAME="e" VALUE="<? echo $arg_expr; ?>"/> 
         <INPUT TYPE="SUBMIT"> 
     </FORM> 
-    This is a simple PHP example to test your connection to Rackspace Cloud Databases. 
-    It does not require your database to have any tables. 
-    It doubles as a handy way to calculate simple MySQL expressions from the browser. 
-    <BR> 
-    Because this sample uses string concatenation to compose SQL statements, only use this in your development environment in your password-protected site. 
-    <BR>  
-    EXAMPLES: 
-        PI()*3*3 
-        curdate() 
-        3=3 AND 4>4 
-        MID('Rackspace',1,4) 
-        SIN(PI()/2) 
-        SHA1('Rackspace Cloud Databases') 
-    </pre></body> 
+    </body> 
 </html>

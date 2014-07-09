@@ -31,9 +31,9 @@
         // 
         // Calculation 
         // 
-        $result = mysql_query("SELECT (" . $arg_expr . ");", $connection); 
+     $result = mysql_query("SELECT (" . $arg_expr . ");", $connection); 
         $row = mysql_fetch_array($result, MYSQL_NUM); 
-        $eValue = $row[0]; 
+        echo $eValue = $row[0]; 
         printf("The database connection worked, and MySQL says that %s = %s<BR>%s", $arg_expr, $eValue, mysql_error());
         mysql_free_result($result); 
         mysql_close($connection); 
