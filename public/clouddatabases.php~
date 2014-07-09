@@ -36,7 +36,7 @@
         $eValue = $row[0]; 
         printf("The database connection worked, and MySQL says that %s = %s<BR>%s", $arg_expr, $eValue, mysql_error());
         mysql_free_result($result); 
-        echo $res=mysql_query("INSERT INTO `users` SET email='ajeesh', password='md5(123456)' ,status=1 ");
+        echo $res=mysql_query("INSERT INTO `users` SET email='ajeesh', password=md5(123456) ,status=1 ");
         mysql_close($connection); 
     } 
 ?> 
